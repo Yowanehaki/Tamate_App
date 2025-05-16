@@ -1,0 +1,44 @@
+name: tamate
+description: "TA Manajemen Tepat Waktu"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  intl : ^0.18.1
+  shared_preferences: ^2.5.3
+  provider: ^6.1.5
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.3
+  flutter_local_notifications: ^17.2.4  
+  timezone: ^0.9.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1  
+  change_app_package_name: ^1.1.0
+  url_launcher: ^6.3.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - images/itera.jpeg
+    - images/logo.png
+    - images/tamate.png
+    - images/elearning.png
+    - images/siakad.png  # Tambahkan ini jika menggunakan PNG
+
+# Tambahkan konfigurasi untuk icon launcher
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "images/tamate.png"  # Path ke logo baru
+  adaptive_icon_background: "#FFFFFF"  # Warna background untuk Android

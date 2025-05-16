@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "724807825578",
+    "project_id": "tamate-be",
+    "storage_bucket": "tamate-be.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724807825578:android:d7b1633eae9a7bde58b8d3",
+        "android_client_info": {
+          "package_name": "com.example.tamate_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724807825578-iitt92vk65tu801isf26f9hum4bmlcde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATozEldJbUfgHffU8-ZTKdySqgAvXOpaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724807825578-iitt92vk65tu801isf26f9hum4bmlcde.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "724807825578-1pr52sjmt8c15q714emh0lo0hrqd56ap.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tamateApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724807825578:android:ea994198ab442c4b58b8d3",
+        "android_client_info": {
+          "package_name": "com.pam.tamate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724807825578-iitt92vk65tu801isf26f9hum4bmlcde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATozEldJbUfgHffU8-ZTKdySqgAvXOpaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724807825578-iitt92vk65tu801isf26f9hum4bmlcde.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "724807825578-1pr52sjmt8c15q714emh0lo0hrqd56ap.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tamateApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
