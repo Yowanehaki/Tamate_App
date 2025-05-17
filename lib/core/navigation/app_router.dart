@@ -20,7 +20,6 @@ class AppRouter {
       case splashRoute:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
       case loginRoute:
-      case loginRoute:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
       case homeRoute:
       case mainRoute:
