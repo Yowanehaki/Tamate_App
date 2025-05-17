@@ -5,8 +5,10 @@ import '../../features/bimbingan/bimbingan_screen.dart';
 import '../../features/logbook/logbook_screen.dart';
 import '../../features/milestone/milestone_screen.dart';
 import '../../features/profile/profile_screen.dart';
+import '../../splash_screen.dart';
 
 class AppRouter {
+  static const String splashRoute = '/splash';
   static const String loginRoute = '/login';
   static const String homeRoute = '/home';
   static const String mainRoute = '/main';
@@ -14,6 +16,10 @@ class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case '/':
+      return MaterialPageRoute(builder: (_) => const SplashScreen()); // Tambahkan splash screen sebagai rute default
+      case splashRoute:
+        return MaterialPageRoute(builder: (_) => const SplashScreen());
+      case loginRoute:
       case loginRoute:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
       case homeRoute:

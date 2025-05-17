@@ -15,6 +15,7 @@ import 'features/logbook/logbook_screen.dart';
 import 'features/profile/profile_screen.dart';
 import 'core/services/user_profile_service.dart';
 import 'firebase_options.dart';
+import 'splash_screen.dart'; // Tambahkan import splash screen
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -56,8 +57,9 @@ class MyApp extends StatelessWidget {
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home: const AuthWrapper(),
+      home: const SplashScreen(), // Ubah dari AuthWrapper ke SplashScreen
       routes: {
+        '/auth_wrapper': (context) => const AuthWrapper(), // Tambahkan route auth_wrapper
         '/login': (context) => const LoginScreen(),
         '/register': (context) => const RegisterScreen(),
         '/main': (context) => const MainScreen(),

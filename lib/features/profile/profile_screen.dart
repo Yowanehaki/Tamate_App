@@ -202,18 +202,105 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
             ListTile(
-              leading: const Icon(Icons.notifications_outlined),
-              title: const Text('Notifikasi'),
-              trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-              onTap: () {},
-            ),
-            const Divider(height: 1),
-            ListTile(
               leading: const Icon(Icons.help_outline),
               title: const Text('Bantuan'),
               trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-              onTap: () {},
+              onTap: () {
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return AlertDialog(
+                      title: const Text('Bantuan Aplikasi'),
+                      content: SingleChildScrollView(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: const [
+                            Text('Home Screen', style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text('Menampilkan ringkasan aktivitas, progress tesis, dan pengumuman penting. Anda dapat melihat jadwal bimbingan mendatang dan milestone terdekat.'),
+                            SizedBox(height: 12),
+                            
+                            Text('Profile Screen', style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text('Untuk mengatur informasi profil Anda, termasuk data diri, kontak, dan informasi akademik.'),
+                            SizedBox(height: 12),
+                            
+                            Text('Logbook', style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text('Untuk mencatat dan mengubah aktivitas terkait pengerjaan tugas akhir. Anda dapat menambahkan entri baru dan mengedit entri yang sudah ada.'),
+                            SizedBox(height: 12),
+                            
+                            Text('Milestone', style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text('Menampilkan progress pengerjaan tugas akhir Anda. Anda dapat melihat tahapan yang sudah diselesaikan dan yang masih harus dikerjakan.'),
+                            SizedBox(height: 12),
+                            
+                            Text('Jadwalkan Bimbingan', style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text('Untuk membuat jadwal bimbingan dengan dosen pembimbing. Anda dapat memilih tanggal, waktu, dan topik bimbingan.'),
+                            SizedBox(height: 12),
+                            
+                            Text('Reminder', style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text('Fitur untuk mengingatkan Anda tentang jadwal bimbingan yang telah direncanakan. Notifikasi akan muncul sebelum jadwal bimbingan.'),
+                          ],
+                        ),
+                      ),
+                      actions: [
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: const Text('Tutup'),
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
             ),
+            const Divider(height: 1),
+            ListTile(
+                leading: const Icon(Icons.attribution),
+                title: const Text('Credits'),
+                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        backgroundColor: const Color.fromARGB(255, 232, 232, 236), // warna item soft
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        content: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: const [
+                            Text(
+                              'Pengembangan Aplikasi Mobile!',
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(height: 8),
+                            Text(
+                              'Mulfi Hazwi Artaf [122140186]',
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(height: 8),
+                            Text(
+                              'Muhammad Faza  [122140199]',
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(height: 8),
+                            Text(
+                              'Naufal Saqib Athaya [122140072]',
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  );
+                },
+              ),
+
             const Divider(height: 1),
             ListTile(
               leading: const Icon(Icons.logout, color: Colors.red),

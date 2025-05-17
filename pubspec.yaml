@@ -1,5 +1,5 @@
 name: tamate
-description: "TA Manajemen Tepat Waktu"
+description: "TA Manajemen Terintegrasi"
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -17,6 +17,8 @@ dependencies:
   firebase_auth: ^5.5.3
   flutter_local_notifications: ^17.2.4  
   timezone: ^0.9.4
+  flutter_native_splash: ^2.4.6
+  
 
 dev_dependencies:
   flutter_test:
@@ -42,3 +44,10 @@ flutter_launcher_icons:
   ios: true
   image_path: "images/tamate.png"  # Path ke logo baru
   adaptive_icon_background: "#FFFFFF"  # Warna background untuk Android
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: images/splash.png
+  android: true
+  ios: true
+  fullscreen: true
